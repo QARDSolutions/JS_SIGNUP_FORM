@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="container"><br>
+        <h1 class="text-success text-center">Signup Form</h1><br>
+        <div class="col-lg-8 m-auto d-block">
+            <form action="#" onsubmit="return validation()" class="bg-light">
+            <div class="form-group">
+                <label>Firstname</label>
+                <input type="text" id="username" name="username" placeholder="Firstname" class="form-control" autocomplete="off">
+                <span id="usr" class="text-danger font-weight-bold"></span>
+            </div>
+            <div class="form-group">
+                <label>Lastname</label>
+                <input type="text" id="lName" name="lName" placeholder="Lastname" class="form-control" autocomplete="off">
+                <span id="lastname" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile No</label>
+                <input type="text" id="mobile-no" name="mobile-no" placeholder="Mobile No" class="form-control" autocomplete="off">
+                <span id="mobile-num" class="text-danger font-weight-bold"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" id="email" name="email" placeholder="Email" class="form-control" autocomplete="off">
+                <span id="mail" class="text-danger font-weight-bold"></span>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="passW1" name="password" placeholder="Password" class="form-control" autocomplete="off">
+                <span id="psw1" class="text-danger font-weight-bold"></span>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="confPass" name="confPass" placeholder="Confirm password" class="form-control" autocomplete="off">
+                <span id="confpsw" class="text-danger font-weight-bold"></span><br>
+            </div>
+                <input type="submit" name="submit" value="submit" class="btn btn-success" autocomplete="off">
+            </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
